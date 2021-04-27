@@ -5,31 +5,45 @@
     padding: 0;
 }
 
+/* body */
+body {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    background-image: url(../img/railways.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
 /* main container */
 .container {
-    display: grid;
-    place-items: center;
-    grid-template-rows: .3fr 1fr;
-    height: 100vh;
     margin: 0 auto;
+    padding: 40px;
+    text-align: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: hsl(133, 20%, 22%);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
 }
 
-/* ticket-price's calcs area */
-.calcs {
-    padding: 30px;
+/* calcs area */
+p {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
-    border-radius: 10px;
-    background-color: hsl(86, 20%, 42%);
 }
 
-/* title & outputs text-color */
 .data,
 h1 {
     color: hsl(70, 100%, 50%);
+    
+}
+.data {
+    margin-top: 5px;
+    font-style: italic;
+}
+h1 {
+    margin-bottom: 30px;
 }

@@ -1,0 +1,35 @@
+/* reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* main container */
+.container {
+    display: grid;
+    place-items: center;
+    grid-template-rows: .3fr 1fr;
+    height: 100vh;
+    margin: 0 auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: hsl(133, 20%, 22%);
+    color: #fff;
+}
+
+/* ticket-price's calcs area */
+.calcs {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-radius: 10px;
+    background-color: black;
+}
+
+/* title & outputs text-color */
+.data,
+h1 {
+    color: hsl(70, 100%, 50%);
+}
